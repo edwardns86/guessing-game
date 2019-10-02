@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row1">
+            <div class="col text-center">
+                <h1 >Mind Reader</h1>
+                <h3>Can You Guess What Number I Am Thinking Of?</h3>
+                <img src='https://making-the-web.com/sites/default/files/clipart/163997/question-mark-gif-163997-9196926.gif'>
+                
+                <h6>Hint - It's Between 1 and 100!</h6>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col col-6 btn-description text-right ">
+                    <span class="align-middle">Enter Your Guess Here  --> </span>
+                 </div>
+            <div class="col col-6">
+                <input id="guessField" type="number" onfocus="">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-warning btn-lg" onclick="guess() ; showfeedback() , setTime()">Check If You Were Right</button>
+            </div>
+            <div class="col text-center">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="refreshGame()"> Restart Game</button>
+                </div>
+        </div>
+        <div class="row ">
+            <div class="col text-center">
+                <span id="prompt" class="align-middle "> </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-4 ">
+                <h4>Previous Guesses</h4>
+                <span id="previousGuesses">  </span>
+            </div>
+            <div class="col col-4">
+                    <h4>Remaining Guesses</h4>
+                <span id="remainingGuesses"> Guesses remaining </span>
+            </div>
+                <div class="col col-4">
+                        <h4>Time Left To Guess</h4>
+                    <span id="time"></span>
+                    <br>
+                    
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
